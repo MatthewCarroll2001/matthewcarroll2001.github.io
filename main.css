@@ -85,6 +85,11 @@
     margin: 10px;
 }
 
+.project img {
+    max-width: 800px;
+    max-height: 400px;
+}
+
 #resume_content {
     margin: 0% 10%;
 }
