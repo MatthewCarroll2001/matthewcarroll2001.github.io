@@ -1,18 +1,19 @@
 #portfolio_body {
     text-align: center;
-    background-color: lightblue;
+    background-color: #2fc2918c;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #resume_body {
     text-align: left;
-    background-color: lightblue;
+    background-color: #2fc2918c;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .bordered {
     border-style: solid;
     border-radius: 5px 10px;
+    background-color: #3f399960;
 }
 
 #nav {
@@ -72,6 +73,18 @@
     flex-direction: column;
 }
 
+#java_projects .project.bordered {
+    background-color: rgba(153, 50, 204, 0.205);
+}
+
+#python_sql_projects .project.bordered {
+    background-color: rgba(0, 255, 255, 0.219);
+}
+
+.secondary_block_header {
+    margin-top: 80px;
+}
+
 .project_block {
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +104,7 @@
 }
 
 #resume_content {
-    margin: 0% 10%;
+    margin: 0% 0 5% 10%;
 }
 
 #footer {
