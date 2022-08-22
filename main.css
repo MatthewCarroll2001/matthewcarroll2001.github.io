@@ -1,19 +1,28 @@
+
+/*
+    General body information
+*/
+body {
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #portfolio_body {
     text-align: center;
-    background-color: #2fc2918c;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #resume_body {
     text-align: left;
-    background-color: #2fc2918c;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*
+    Add borders to certain items like buttons
+*/
 .bordered {
+    border-width: 2px;
     border-style: solid;
     border-radius: 5px 10px;
-    background-color: #3f399960;
+    background-color: orange;
 }
 
 #nav {
@@ -64,6 +73,9 @@
     font-size: 40px;
 }
 
+/*
+    Organize listed projects as flex items
+*/
 #projects {
     margin: 50px;
 }
@@ -73,8 +85,18 @@
     flex-direction: column;
 }
 
+#web_app_projects .project.bordered {
+    background-color: lightgoldenrodyellow;
+}
+
+.project img {
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
 #java_projects .project.bordered {
-    background-color: rgba(153, 50, 204, 0.205);
+    background-color: lightblue;
 }
 
 #python_sql_projects .project.bordered {
@@ -103,8 +125,20 @@
     max-height: 400px;
 }
 
+/*
+    Distinguish Resume page information
+*/
+
 #resume_content {
     margin: 0% 0 5% 10%;
+}
+
+.resume_block {
+    display: inline-block;
+    background-color: rgba(230, 220, 220, 70%);
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #footer {
@@ -113,4 +147,13 @@
     margin: 10px 100px;
     border-radius: 10px;
     background-color: rgba(119, 136, 153, 0.212);
+}
+
+#footer img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+#footer .footer_logos {
+    display: flex;
 }
