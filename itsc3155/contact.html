@@ -27,20 +27,50 @@
         <h1 class="my-3 text-center">Contact</h1>
         
         <!-- Form -->
-        <form action="" method="" class="form">
+        <form action="results.html" method="GET" class="form">
 
-            <!-- Text input row -->
+            <!-- First Name input row -->
             <div class="row g-4 align-items-center justify-content-center m-3">
                 <div class="col-auto">
-                    <label for="name" class="form-label">Name</label>
+                    <label for="fName" class="form-label">First Name</label>
                 </div>
 
                 <div class="col-auto">
-                    <input type="text" id="name" name="name" class="form-control">
+                    <input type="text" id="fName" name="fName" class="form-control" required>
                 </div>
                 
                 <div class="col-auto">
-                    <span class="form-text">Enter your name</span>
+                    <span class="form-text">Enter your first name</span>
+                </div>
+            </div>
+
+            <!-- Last Name input row -->
+            <div class="row g-4 align-items-center justify-content-center m-3">
+                <div class="col-auto">
+                    <label for="lName" class="form-label">Last Name</label>
+                </div>
+
+                <div class="col-auto">
+                    <input type="text" id="lName" name="lName" class="form-control" required>
+                </div>
+                
+                <div class="col-auto">
+                    <span class="form-text">Enter your last name</span>
+                </div>
+            </div>
+
+            <!-- Email input row -->
+            <div class="row g-4 align-items-center justify-content-center m-3">
+                <div class="col-auto">
+                    <label for="email" class="form-label">Email</label>
+                </div>
+
+                <div class="col-auto">
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="col-auto">
+                    <span class="form-text">Enter your email</span>
                 </div>
             </div>
 
@@ -51,16 +81,16 @@
                 </div>
 
                 <div class="col-auto">
-                    <input type="radio" id="department1" name="department" checked>
+                    <input type="radio" id="department1" name="department" value="Software" checked>
                     <label for="department1">Software</label><br>
 
-                    <input type="radio" id="department2" name="department">
+                    <input type="radio" id="department2" name="department" value="Business">
                     <label for="department2">Business</label><br>
 
-                    <input type="radio" id="department3" name="department">
+                    <input type="radio" id="department3" name="department" value="English">
                     <label for="department3">English</label><br>
 
-                    <input type="radio" id="department4" name="department">
+                    <input type="radio" id="department4" name="department" value="Foreign Studies">
                     <label for="department4">Foreign Studies</label>
                 </div>
                 
@@ -71,7 +101,7 @@
 
             <!-- Submit button row -->
             <div class="text-center m-5">
-                <button type="submit" class="btn btn-success px-4">Submit</button>
+                <button type="submit" class="btn btn-primary px-4">Submit</button>
             </div>
             
         </form>
