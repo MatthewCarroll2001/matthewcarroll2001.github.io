@@ -85,14 +85,12 @@ body {
     flex-direction: column;
 }
 
-#web_app_projects .project.bordered {
-    background-color: lightgoldenrodyellow;
+#crystal_instruments_projects .project.bordered {
+    background-color: rgba(0, 255, 0, 0.219);
 }
 
-.project img {
-    border: 1px solid gray;
-    border-radius: 3px;
-    margin-bottom: 10px;
+#web_app_projects .project.bordered {
+    background-color: lightgoldenrodyellow;
 }
 
 #java_projects .project.bordered {
@@ -101,6 +99,12 @@ body {
 
 #python_sql_projects .project.bordered {
     background-color: rgba(0, 255, 255, 0.219);
+}
+
+.project img {
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .secondary_block_header {
